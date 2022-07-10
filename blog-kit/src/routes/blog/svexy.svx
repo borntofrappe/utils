@@ -1,0 +1,41 @@
+---
+title: Svexy
+---
+
+<script>
+  let counter = 0
+  let change = 1
+
+  const handleChange = () => counter += change
+</script>
+
+`mdsvex` allows to include Svelte syntax alongside markdown.
+
+As a proof of concept, here you have a counter currently set at: **{counter}**.
+
+Here a button and an input field to change the value by an arbitrary amount.
+
+<form on:submit|preventDefault={handleChange}>
+  <button>
+    Change by
+  </button>
+  <input type="number" bind:value={change} />
+</form>
+
+<style>
+  form {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+  }
+
+  button, input {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: hsl(0, 0%, 20%);
+    background: hsl(0, 0%, 92%);
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+</style>

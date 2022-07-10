@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	color: hsl(44, 30%, 17%);
+	background: hsl(41, 100%, 97%);
+	text-rendering: optimizeSpeed;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
+		helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+code {
+	font-family: Inconsolata, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
