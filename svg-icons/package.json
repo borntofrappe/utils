@@ -1,0 +1,19 @@
+{
+  "name": "svg-icons",
+  "version": "1.0.0",
+  "description": "Create `icons.js` to export SVG syntax.",
+  "main": "index.js",
+  "scripts": {
+    "icons": "node script"
+  },
+  "keywords": [
+    "svg",
+    "icons"
+  ],
+  "author": "borntofrappe",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^15.3.2"
+  },
+  "type": "module"
+}
