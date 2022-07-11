@@ -6,9 +6,9 @@ Useful projects for personal websites. Less entertaining, more practical.
 
 A SvelteKit app for a basic website with a markdown blog.
 
-## puppeteer-script
+## puppeteer-scripts
 
-Puppeteer script to take a screenshot of an `.html` document.
+Puppeteer scripts to take screenshots of `.html` documents.
 
 ## svg-icons
 

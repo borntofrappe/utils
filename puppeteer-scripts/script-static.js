@@ -10,7 +10,9 @@ import path from "path";
     height: 500,
   });
 
-  await page.goto(path.resolve("./index.html"), { waitUntil: "networkidle0" });
-  await page.screenshot({ path: "./index.png" });
+  await page.goto(path.resolve("./static/index.html"), {
+    waitUntil: "networkidle0",
+  });
+  await page.screenshot({ path: "./static/index.png" });
   await browser.close();
 })();

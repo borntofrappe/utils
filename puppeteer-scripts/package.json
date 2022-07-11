@@ -1,10 +1,10 @@
 {
   "name": "puppeteer-script",
   "version": "1.0.0",
-  "description": "Take a screenshot of an `.html` document.",
+  "description": "Take screenshots of `.html` documents.",
   "main": "index.js",
   "scripts": {
-    "screenshot": "node script"
+    "screenshot": "node script-static"
   },
   "keywords": [
     "opengraph"
