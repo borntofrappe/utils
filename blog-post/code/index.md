@@ -1,8 +1,8 @@
-# Title
+# code
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, ullam!
+Use `marked` to process markdown syntax and produce a markup document.
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, ullam!
+Use `shiki` to highlight code fences with a specific theme.
 
 ## HTML
 
