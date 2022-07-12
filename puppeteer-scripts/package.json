@@ -4,7 +4,8 @@
   "description": "Take screenshots of `.html` documents.",
   "main": "index.js",
   "scripts": {
-    "screenshot": "node script-static"
+    "screenshot": "node script-static",
+    "screenshots": "node script-dynamic"
   },
   "keywords": [
     "opengraph"
