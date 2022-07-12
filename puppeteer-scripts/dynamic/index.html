@@ -14,13 +14,13 @@
         margin: 0;
       }
 
-      main {
+      header {
         width: 1000px;
         height: 500px;
         position: relative;
       }
 
-      main > h1 {
+      header > h1 {
         position: absolute;
         top: 20%;
         left: 50%;
@@ -33,7 +33,7 @@
           sans-serif;
       }
 
-      main > svg {
+      header > svg {
         display: block;
       }
     </style>
@@ -171,7 +171,7 @@
         </defs>
       </svg>
 
-      <main>
+      <header>
         <h1>${title}</h1>
         <svg style="background: ${background}" viewBox="0 0 120 60">
           <circle fill=${background} r="60" cx="60" cy="60" />
@@ -192,7 +192,7 @@
             <circle fill=${foreground} r="36" />
           </g>
         </svg>
-      </main>`;
+      </header>`;
     </script>
   </body>
 </html>

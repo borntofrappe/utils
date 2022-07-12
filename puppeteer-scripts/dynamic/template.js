@@ -140,13 +140,13 @@ export default (posts) => {
             margin: 0;
           }
 
-          main {
+          header {
             width: 1000px;
             height: 500px;
             position: relative;
           }
     
-          main > h1 {
+          header > h1 {
             position: absolute;
             top: 20%;
             left: 50%;
@@ -158,7 +158,7 @@ export default (posts) => {
               sans-serif;
           }
     
-          main > svg {
+          header > svg {
             display: block;
           }
         </style>
@@ -213,7 +213,7 @@ export default (posts) => {
     ${headers
       .map(
         ({ title, timeOfDay, foreground, background, position }) => `
-    <main>
+    <header>
           <h1 style="filter: url(#filter-outline-${timeOfDay})">${title}</h1>
           <svg style="background: ${background}" viewBox="0 0 120 60">
               <circle fill=${background} r="60" cx="60" cy="60" />
@@ -234,7 +234,7 @@ export default (posts) => {
                 <circle fill=${foreground} r="36" />
               </g>
             </svg>
-    </main>
+    </header>
     
     `
       )
