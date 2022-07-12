@@ -13,3 +13,7 @@ Puppeteer scripts to take screenshots of `.html` documents.
 ## svg-icons
 
 Node script to create an object exporting the syntax from a series of SVG icons.
+
+## blog-post
+
+Design for different elements meant to style a blog posts.
