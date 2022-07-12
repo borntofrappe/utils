@@ -1,0 +1,17 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "keywords": ["design", "code", "fence", "markdown", "markup"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "marked": "^4.0.18",
+    "shiki": "^0.10.1"
+  },
+  "type": "module"
+}
