@@ -7,6 +7,7 @@ const height = 500;
 const { length } = posts;
 
 (async () => {
+  console.log("Launching puppeteer");
   const browser = await puppeteer.launch();
 
   const page = await browser.newPage();
@@ -17,14 +18,17 @@ const { length } = posts;
 
   const html = template(posts);
 
+  console.log(`Rendering a page for ${posts.length} posts.`);
   await page.setContent(html, { waitUntil: "networkidle0" });
 
+  console.log("Taking one picture for each post.");
+  console.log();
   for (let i = 0; i < posts.length; i++) {
-    const path = `./dynamic/post-${posts[i].title
-      .replace(/ /g, "-")
-      .toLowerCase()}.png`;
+    const { title } = posts[i];
+    const path = `./dynamic/post-${title.replace(/ /g, "-").toLowerCase()}.png`;
     const y = height * i;
 
+    console.log(`${title}`);
     await page.screenshot({
       path,
       clip: {
@@ -34,7 +38,9 @@ const { length } = posts;
         height,
       },
     });
+    console.log(` -> \`${path}\``);
   }
 
+  console.log("\nDone.\nRefer to the documents in the `./dynamic` folder");
   await browser.close();
 })();
