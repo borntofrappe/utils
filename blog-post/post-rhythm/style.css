@@ -1,0 +1,71 @@
+main {
+  max-width: 45rem;
+  margin: 0rem auto;
+  padding: 1rem;
+}
+
+main > * + * {
+  margin-top: 1em;
+  margin-top: var(--vertical-rhythm, 1em);
+}
+
+h2,
+h3 {
+  --vertical-rhythm: var(--size-800);
+}
+
+h2 + *,
+h3 + * {
+  --vertical-rhythm: var(--size-300);
+}
+
+blockquote,
+blockquote + *,
+figure,
+figure + * {
+  --vertical-rhythm: var(--size-800);
+}
+
+table,
+table + * {
+  --vertical-rhythm: var(--size-700);
+}
+
+pre,
+pre + * {
+  --vertical-rhythm: var(--size-600);
+}
+
+/* post-rhythm */
+blockquote {
+  padding-left: 1rem;
+  border-left: 0.2rem solid currentColor;
+  font-style: italic;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 0.2rem solid currentColor;
+}
+
+pre {
+  padding: 0.5rem;
+  border: 0.2rem solid currentColor;
+}
+
+ul > * + *,
+ol > * + * {
+  margin-top: 0.5em;
+}
