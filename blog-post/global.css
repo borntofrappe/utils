@@ -73,6 +73,8 @@ body {
   --color: var(--warm-grey-900);
   --background: var(--warm-grey-000);
   --accent: var(--accent-color-500);
+  --easing: cubic-bezier(0.37, 0, 0.63, 1);
+  --max-width: 48rem;
   color: var(--color);
   background: var(--background);
   accent-color: var(--accent);
@@ -107,7 +109,7 @@ body::-webkit-scrollbar-thumb {
 a {
   color: inherit;
   font-weight: 700;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.25s var(--easing);
 }
 
 a:hover {

@@ -19,8 +19,7 @@ const icons = {
         const lang = infostring || "code";
         const icon = icons[lang] || icons.bug;
         return `<div class="code">
-    <span class="visually-hidden">${lang}</span> 
-    ${icon}
+    <span>${lang} ${icon}</span> 
     ${highlighter.codeToHtml(code, { lang })}
     </div>`;
       },
