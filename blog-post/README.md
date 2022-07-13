@@ -20,4 +20,4 @@ Vertical space for block-level elements. Follow the guidance of the tutorial [_i
 
 ## links
 
-Link elements with a particular class. Permalink, relative links, absolute links.
+Link elements with a particular class. Permanent links, relative links, absolute links, skip to content links.
