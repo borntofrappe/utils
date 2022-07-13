@@ -29,24 +29,8 @@ const posts = [
   },
 ];
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
 const formatDate = (date) => {
   if (Intl.DateTimeFormat) {
-    console.log("format");
     return new Intl.DateTimeFormat("en", {
       year: "numeric",
       month: "long",
