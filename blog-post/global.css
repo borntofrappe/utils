@@ -103,7 +103,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border: 0.2rem solid var(--background);
   border-radius: 0.5rem;
-  background: var(--accent-color);
+  background: var(--accent);
 }
 
 a {
@@ -113,7 +113,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: var(--accent);
 }
 
 p {

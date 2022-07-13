@@ -17,3 +17,7 @@ Global stylesheet for all elements in the directory.
 ## post-rhythm
 
 Vertical space for block-level elements. Follow the guidance of the tutorial [_improve the readability of the content on your website_](https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website/).
+
+## links
+
+Link elements with a particular class. Permalink, relative links, absolute links.
