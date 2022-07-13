@@ -33,8 +33,24 @@ main > * + * {
     width: var(--icon-size);
     height: var(--icon-size);
     background: currentColor;
-    mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M 3 -20 h 22 a 20 20 0 0 1 0 40 h -22 l 10 -10 -10 10 10 10" /%3E%3Cpath d="M -45 -20 h 28" /%3E%3Cpath d="M -45 0 h 28" /%3E%3Cpath d="M -45 20 h 28" /%3E%3C/g%3E%3C/svg%3E');
-    -webkit-mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M 3 -20 h 22 a 20 20 0 0 1 0 40 h -22 l 10 -10 -10 10 10 10" /%3E%3Cpath d="M -45 -20 h 28" /%3E%3Cpath d="M -45 0 h 28" /%3E%3Cpath d="M -45 20 h 28" /%3E%3C/g%3E%3C/svg%3E');
+    mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">\
+          <path d="M 3 -20 h 22 a 20 20 0 0 1 0 40 h -22 l 10 -10 -10 10 10 10" />\
+          <path d="M -45 -20 h 28" />\
+          <path d="M -45 0 h 28" />\
+          <path d="M -45 20 h 28" />\
+        </g>\
+      </svg>');
+    -webkit-mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">\
+          <path d="M 3 -20 h 22 a 20 20 0 0 1 0 40 h -22 l 10 -10 -10 10 10 10" />\
+          <path d="M -45 -20 h 28" />\
+          <path d="M -45 0 h 28" />\
+          <path d="M -45 20 h 28" />\
+        </g>\
+      </svg>');
   }
 }
 
@@ -86,8 +102,24 @@ main > * + * {
     width: 100%;
     height: 100%;
     background: currentColor;
-    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg transform="rotate(-45)"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" /%3E%3Cpath transform="scale(-1 -1)" stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
-    mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg transform="rotate(-45)"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" /%3E%3Cpath transform="scale(-1 -1)" stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    -webkit-mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g transform="rotate(-45)">\
+          <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+            <path id="link" stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" />\
+            <use href="%23link" transform="scale(-1 -1)" />\
+          </g>\
+        </g>\
+      </svg>');
+    mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g transform="rotate(-45)">\
+          <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+            <path id="link" stroke-dasharray="140 26" stroke-dashoffset="-20" d="M -21 9 a 21 21 0 0 1 0 -42 h 26 a 21 21 0 0 1 0 42 h -26" />\
+            <use href="%23link" transform="scale(-1 -1)" />\
+          </g>\
+        </g>\
+      </svg>');
   }
 }
 
@@ -116,12 +148,36 @@ main > * + * {
   }
 
   .relative::after {
-    mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath d="M -20 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5" /%3E%3Cpath d="M -40 0 h 50 l -15 -15 15 15 -15 15" /%3E%3C/g%3E%3C/svg%3E');
-    -webkit-mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath d="M -20 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5" /%3E%3Cpath d="M -40 0 h 50 l -15 -15 15 15 -15 15" /%3E%3C/g%3E%3C/svg%3E');
+    mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+          <path d="M -20 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5"  />\
+          <path d="M -40 0 h 50 l -15 -15 15 15 -15 15" />\
+        </g>\
+      </svg>');
+    -webkit-mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+          <path d="M -20 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5"  />\
+          <path d="M -40 0 h 50 l -15 -15 15 15 -15 15" />\
+        </g>\
+      </svg>');
   }
 
   .absolute::after {
-    mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath transform="scale(-1 1)" d="M -15 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5" /%3E%3Cpath d="M -5 0 h 50 l -15 -15 15 15 -15 15" /%3E%3C/g%3E%3C/svg%3E');
-    -webkit-mask-image: url('data:image/svg+xml,%3Csvg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100"%3E%3Cg fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"%3E%3Cpath transform="scale(-1 1)" d="M -15 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5" /%3E%3Cpath d="M -5 0 h 50 l -15 -15 15 15 -15 15" /%3E%3C/g%3E%3C/svg%3E');
+    mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+          <path transform="scale(-1 1)" d="M -15 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5"  />\
+          <path d="M -5 0 h 50 l -15 -15 15 15 -15 15" />\
+        </g>\
+      </svg>');
+    -webkit-mask-image: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">\
+        <g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">\
+          <path transform="scale(-1 1)" d="M -15 -17.5 v -2.5 a 10 10 0 0 1 10 -10 h 40 a 10 10 0 0 1 10 10 v 40 a 10 10 0 0 1 -10 10 h -40 a 10 10 0 0 1 -10 -10 v -2.5"  />\
+          <path d="M -5 0 h 50 l -15 -15 15 15 -15 15" />\
+        </g>\
+      </svg>');
   }
 }

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100">
+  <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -45 -32.5 h 90 v 75 h -90z" />
+    <path d="M -28 -31.5 v -12" />
+    <path d="M 28 -31.5 v -12" />
+  </g>
+  <g fill="currentColor">
+    <path d="M -40 -32.5 h 80 v 16 h -80z" />
+    <rect id="cell" x="-6.5" y="-6.5" width="13" height="13" rx="2" />
+    <use href="#cell" transform="translate(-21 0)" />
+    <use href="#cell" transform="translate(21 0)" />
+    <g transform="translate(0 21)">
+      <use href="#cell" />
+      <use href="#cell" transform="translate(-21 0)" />
+      <use href="#cell" transform="translate(21 0)" />
+    </g>
+  </g>
+</svg>
