@@ -20,17 +20,14 @@ blockquote {
 
 @supports ((-webkit-mask-image: url()) or (mask-image: url())) {
   blockquote {
+    padding-left: 0;
     border-left: none;
     --icon-size: 3rem;
-    position: relative;
-    padding-left: var(--icon-size);
   }
 
   blockquote::before {
+    float: left;
     content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
     width: var(--icon-size);
     height: var(--icon-size);
     background: var(--accent);
