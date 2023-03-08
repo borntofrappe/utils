@@ -1,0 +1,9 @@
+{
+  "name": "rehype-permalink",
+  "version": "1.0.0",
+  "description": "A proof of concept for a most helpful `rehype` plugin.",
+  "scripts": {
+    "dev": "node script.js"
+  },
+  "author": "borntofrappe"
+}
