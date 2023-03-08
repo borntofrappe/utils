@@ -5,5 +5,15 @@
   "scripts": {
     "dev": "node script.js"
   },
-  "author": "borntofrappe"
+  "author": "borntofrappe",
+  "devDependencies": {
+    "rehype-stringify": "^9.0.3",
+    "remark-html": "^15.0.2",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "slug": "^8.2.2",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.2"
+  },
+  "type": "module"
 }
