@@ -1,6 +1,6 @@
 # rehype-permalink
 
-A proof of concept for a helpful `rehype` plugin, discussed in the context of a larger exploration of abstract syntax trees.
+A proof of concept for a helpful `rehype` plugin, discussed in the context of a larger exploration of abstract syntax trees. The code follows the article [_A practical rehype plugin_](https://borntofrappe.netlify.app/a-practical-rehype-plugin).
 
 ## plugin
 
