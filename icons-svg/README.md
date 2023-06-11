@@ -14,16 +14,30 @@ With an `img` element:
 
 - refer to `icons.svg` to include every icon
 
-- refer to `icons.svg#view-id` to include one of the icons highlighted through the `<view>` element:
+  <!-- prettier-ignore -->
+  ```html
+  <img
+    src="./icons.svg"
+    ...
+  />
+  ```
 
-  - `#bar-chart`
+- refer to a _view element_ to include the icons predefined through `<view>` elements
 
-  - `#line-chart`
+  <!-- prettier-ignore -->
+  ```html
+  <img
+    src="./icons.svg#pie-chart"
+    ...
+  />
+  ```
 
-  - `#candlestick-chart`
+- use a _view fragment_ to selectively focus on parts of the larger `<svg>`
 
-  - `#table-chart`
-
-  - `#pie-chart`
-
-  - `#tree-diagram`
+  <!-- prettier-ignore -->
+  ```html
+  <img
+    src="./icons.svg#svgView(viewBox(0 0 100 100))"
+    ...
+  />
+  ```
