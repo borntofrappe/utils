@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>icons-svg</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+
+    code[data-lang="HTML"]::before {
+      content: "<";
+    }
+
+    code[data-lang="HTML"]::after {
+      content: ">";
+    }
+  </style>
+  <body>
+    <h1>icons-svg</h1>
+    <p>With an <code data-lang="HTML">img</code> tag</p>
+    <img
+      src="./icons.svg"
+      alt="SVG icons for a few data visualizations. Bar, line, candlestick and a handful of other types."
+      width="600"
+      height="100"
+    />
+
+    <p>
+      With an <code data-lang="HTML">img</code> tag, focusing on a particular
+      icon through the <code data-lang="HTML">view</code> element
+    </p>
+    <img
+      src="./icons.svg#pie-chart"
+      alt="SVG icon for a debatable pie chart."
+      width="100"
+      height="100"
+    />
+  </body>
+</html>
