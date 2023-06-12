@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+	<view id="window" viewBox="45 5 30 30" />
+	<view id="window-corner" viewBox="60 20 15 15" />
+
+	<rect fill="#eff4fb" width="80" height="60" />
+
+	<g transform="translate(10 20)">
+        <g fill="#d99671">
+            <rect x="2" y="1" width="1.5" height="2.5" />
+            <rect x="16.5" y="1" width="1.5" height="2.5" />
+        </g>
+		<rect width="20" height="2" fill="#f8b972" />
+		<g transform="translate(10 0)">
+			<path fill="#c15a3c" d="M 0 0 h 1 a 2 2 0 0 0 2 -2 v -2 h -6 v 2 a 2 2 0 0 0 2 2" />
+			<g>
+				<path fill="#989a06" stroke="#989a06" transform="scale(-1 1)" d="M -0.25 -4.25 q 0 -2.5 3 -2.5 q 0 3 -3 2.5z" />
+				<path fill="#868800" stroke="#868800" d="M -0.25 -4.25 q 0 -2.5 3 -2.5 q 0 3 -3 2.5z" />
+			</g>
+			<path fill="#562400" d="M 3 -3 v -1 h -6 v 1" />
+		</g>
+	</g>
+
+	<g transform="translate(10 55)">
+		<g transform="translate(3 -5)">
+			<rect fill="#80b2e2" width="12" height="2" rx="0.25" />
+            <g fill="#bad4ef">
+                <rect x="9.5" width="1.5" height="2" />
+                <rect x="1" width="4" height="2" />
+            </g>
+		</g>
+		<g transform="translate(2 -7)">
+			<rect width="12" height="2" fill="#eb897a" rx="0.25" />
+            <g fill="#f2c4bd">
+                <rect x="1" width="1.5" height="2" />
+                <rect x="4" width="6" height="2" />
+            </g>
+		</g>
+
+		<rect fill="#f8b972" y="-3" width="11" height="3" />
+		<rect fill="#d99671" x="11" y="-3" width="13" height="3" />
+
+		<rect fill="#d99671" width="4" height="5" />
+		<rect fill="#f8b972" width="2" height="5" />
+
+		<g transform="translate(9 0)">
+			<rect fill="#d99671" width="4" height="5" />
+			<rect fill="#f8b972" width="2" height="5" />
+		</g>
+        
+
+		<g transform="translate(20 0)">
+			<rect fill="#d99671" width="4" height="5" />
+			<rect fill="#f8b972" width="2" height="5" />
+		</g>
+	</g>
+	
+	<g transform="translate(24 49)">
+		<path fill="#d99671" d="M 0 0 h 8 l 4 -8 h 40 v 18 h -52" />
+		<path fill="#f4c189" d="M 11 4 l 6 -12 h 31 l -3.25 6.5 h -8.75 v 5" />
+		<g fill="#f9e7dc">
+            <path d="M 13 4 l 4 -8 h 12 l -4 8" />
+            <path d="M 27.5 4 l 4 -8 h 12 l -1.25 2.5 h -6.25 v 5.5" />
+		</g>
+		<path fill="#f8b972" d="M 0 0 h 4 v 3.5 h 32 v -5 h 4 v 11.5 h -40" />
+		<path fill="none" stroke="#d99671" stroke-width="0.5" d="M 4 0 v 6 h 32" />
+		
+		<g fill="#bc5839">
+			<rect x="1" y="10" width="3" height="1" />
+            <rect x="13" y="10" width="3" height="1" />
+            <rect x="35" y="10" width="3" height="1" />
+            <rect x="47" y="10" width="3" height="1" />
+		</g>
+	</g>
+
+	<g transform="translate(45 5)">
+		<rect fill="none" stroke="#c8c7dc" stroke-width="2" width="30" height="30" />
+		<svg width="30" height="30" viewBox="0 0 100 100">
+			<rect fill="#a1d9ea" width="100" height="100" />
+			<g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path fill="#ffffff" stroke="#ffffff" d="M 0 80 A 20 20 0 0 0 20 75 20 20 0 0 0 40 70 20 20 0 0 0 60 65 20 20 0 0 0 80 60 30 30 0 0 0 100 60 L 100 20 A 20 20 0 0 0 80 25 20 20 0 0 0 60 30 20 20 0 0 0 40 35 20 20 0 0 0 20 40 20 20 0 0 0 0 45" />
+				<path fill="#cbe9f0" stroke="#cbe9f0" d="M 0 80 A 20 20 0 0 0 20 75 20 20 0 0 0 40 70 20 20 0 0 0 60 65 20 20 0 0 0 80 60 30 30 0 0 0 100 60 L 100 55 A 20 20 0 0 1 80 55 20 20 0 0 1 60 60 20 20 0 0 1 40 65 20 20 0 0 1 20 70 20 20 0 0 1 0 75" />
+			</g>
+
+			<path fill="#a4c96b" d="M 0 82 c 20 -8 70 -12 100 -12 v 30 h -100z" />
+			<path fill="#cbe9f0" d="M 0 82 c 20 -4 70 -4 100 -2 v 20 h -100z" />
+			<path fill="#93ca2e" d="M 0 100 c 30 -8 60 -18 100 -20 v 20z" />
+			<path fill="#7bb617" d="M 0 80 c 30 0 80 10 100 20 h -100z" />
+
+			<g stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path fill="#24721f" stroke="#24721f" transform="translate(12 90)" d="M 0 0 c -8 -1 -4 -20 0 -30 4 10 8 29 0 30z" />
+				<g fill="#51941a" stroke="#51941a">
+					<path transform="translate(22 85) scale(0.65)" d="M 0 0 c -8 -1 -4 -20 0 -30 4 10 8 29 0 30z" />
+					<path transform="translate(34 88) scale(0.5)" d="M 0 0 c -8 -1 -4 -20 0 -30 4 10 8 29 0 30z" />
+					<path transform="translate(80 85) scale(0.4)" d="M 0 0 c -8 -1 -4 -20 0 -30 4 10 8 29 0 30z" />
+					<path transform="translate(92 92) scale(0.6)" d="M 0 0 c -8 -1 -4 -20 0 -30 4 10 8 29 0 30z" />
+				</g>
+			</g>
+		</svg>
+	</g>
+</svg>

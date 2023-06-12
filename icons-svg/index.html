@@ -55,5 +55,32 @@
       width="100"
       height="100"
     />
+
+    <p>
+      With an <code data-lang="HTML">picture</code> tag, highlighting different
+      views at different viewports
+    </p>
+    <picture>
+      <source
+        srcset="./picture.svg#window-corner"
+        alt="A calm hill"
+        media="(max-width: 500px)"
+        width="200"
+        height="200"
+      />
+      <source
+        srcset="./picture.svg#window"
+        alt="A calm landscape"
+        media="(max-width: 800px)"
+        width="500"
+        height="500"
+      />
+      <img
+        src="./picture.svg"
+        alt="A beautiful room with a natural opening toward a calm landscape"
+        width="800"
+        height="600"
+      />
+    </picture>
   </body>
 </html>
