@@ -3,50 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: system-ui;
-      }
-
-      main {
-        padding: 1rem;
-        inline-size: 600px;
-        block-size: 360px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: hsl(0 0% 90%);
-        background: hsl(0 0% 20%);
-      }
-
-      h1 {
-        font-weight: 400;
-        font-size: 3rem;
-      }
-
-      main > svg {
-        max-inline-size: 8rem;
-        color: hsl(48 94% 68%);
-      }
-    </style>
+    <title>puppeteer-screenshots</title>
   </head>
+  <style>
+    body {
+      font-family: system-ui;
+      margin: 0;
+      color: hsl(0 0% 15%);
+    }
+
+    div {
+      box-sizing: border-box;
+      --corner-size: 70px;
+      inline-size: 600px;
+      block-size: 400px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      outline: 1px solid;
+      border: 10px solid currentColor;
+    }
+
+    div::before,
+    div::after {
+      content: "";
+      position: absolute;
+      inline-size: var(--corner-size, 50px);
+      block-size: var(--corner-size, 50px);
+      background: currentColor;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 20% 20%, 20% 100%, 0% 100%);
+    }
+
+    div::before {
+      inset-inline-start: 1rem;
+      inset-block-start: 1rem;
+    }
+
+    div::after {
+      inset-inline-end: 1rem;
+      inset-block-end: 1rem;
+      scale: -1 -1;
+    }
+
+    div > svg {
+      display: block;
+      max-block-size: 60%;
+    }
+  </style>
   <body>
-    <main>
-      <h1>Hi there</h1>
-      <svg
-        viewBox="-23.204545974731445 -24 45.409088134765625 43.56756591796875"
-      >
-        <path
-          fill="currentColor"
-          d="M 0 15 Q -21 28 -15 4 Q -34 -11 -9 -13 Q -1 -35 8 -13 Q 33 -11 14 4 Q 20 28 0 15"
-        />
+    <div>
+      <svg viewBox="-0.5 -0.75 71 101.25">
+        <g stroke-linecap="round" stroke-linejoin="round">
+          <g stroke-width="1.5" stroke="hsl(0 0% 15%)">
+            <g fill="none">
+              <path d="M 12 0 4 52" />
+              <path d="M 9 32 1 52" />
+              <path d="M 61 32 69 52" />
+              <path d="M 58 0 66 52" />
+            </g>
+            <g fill="hsl(165 99% 43%)">
+              <path d="M 58 37 58 32 66 28 66 33 58 37 34 25 34 20 58 32 Z" />
+              <path d="M 4 4 4 9 26 21 26 16 Z" />
+              <path d="M 12 37 12 32 4 28 4 33 12 37 34 25 34 20 12 32 Z" />
+              <path d="M 66 4 66 9 42 21 42 16 Z" />
+              <path
+                d="M 4 4 12 0 34 12 58 0 66 4 42 16 66 28 58 32 34 20 12 32 4 28 26 16 Z"
+              />
+            </g>
+          </g>
+          <g transform="translate(0 50)">
+            <g stroke="hsl(0 0% 15%)">
+              <path
+                fill="hsl(0 0% 100%)"
+                d="M 4 0 A 4 4 0 0 0 0 4 L 0 46 A 4 4 0 0 0 4 50 L 66 50 A 4 4 0 0 0 70 46 L 70 4 A 4 4 0 0 0 66 0 Z"
+              />
+              <path
+                fill="hsl(300 2% 87%)"
+                d="M 4 0 A 4 4 0 0 0 0 4 L 0 6 70 6 L 70 4 A 4 4 0 0 0 66 0 Z"
+              />
+            </g>
+            <g transform="translate(5 3)" fill="hsl(0 0% 15%)">
+              <circle r="1" />
+              <circle cx="3" r="1" />
+              <circle cx="6" r="1" />
+            </g>
+            <g transform="translate(35 25)" fill="hsl(0 0% 15%)">
+              <text
+                fill="hsl(0 0% 15%)"
+                font-family="sans-serif"
+                text-anchor="middle"
+                font-size="13"
+                y="7.5"
+              >
+                Puppeteer
+              </text>
+            </g>
+          </g>
+        </g>
       </svg>
-    </main>
+    </div>
   </body>
 </html>

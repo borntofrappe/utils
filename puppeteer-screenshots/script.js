@@ -5,7 +5,7 @@ import { resolve } from "node:path";
   const browser = await puppeteer.launch({ headless: "new" });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: 600, height: 360 });
+  await page.setViewport({ width: 600, height: 400 });
 
   await page.goto(resolve("index.html"));
 
