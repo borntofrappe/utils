@@ -1,0 +1,103 @@
+<svg tabindex="0" aria-label="Press to toggle a suprise" role="button" aria-pressed="false" xmlns="http://www.w3.org/2000/svg" style="display: block;" viewBox="-45 -45 90 90">
+    <defs>
+        <script>
+        function handleEvent(event) {
+            if(event.key) {
+                if(![" ", "Enter", "Spacebar"].includes(event.key)) return 
+                event.preventDefault()
+            }
+            const pressed = this.classList.contains("pressed");
+            if (pressed) {
+                this.setAttribute("aria-pressed", false);
+                this.classList.remove("pressed");
+            } else {
+                this.style.color = `hsl(${Math.floor(Math.random() * 360)} 90% 60%)`;
+                this.setAttribute("aria-pressed", true);
+                this.classList.add("pressed");
+            }
+        }
+        document.querySelector("svg").addEventListener("click", handleEvent);
+        document.querySelector("svg").addEventListener("keydown", handleEvent);
+        </script>
+        <style>
+        svg:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .hover {
+            transform: translate(0, -5px) rotate(-20deg);
+            transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        svg:hover .hover {
+            transform: translate(0, 0px) rotate(0deg);
+        }
+
+        .active {
+            transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+            svg:active .active {
+            transform: translate(1px, 3px) rotate(5deg);
+            transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .translate,
+        .scale {
+            transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+            transition-duration: 0.8s;
+        }
+
+        .translate {
+            translate: 0 30px;
+            transition-property: translate;
+        }
+        .scale {
+            scale: 0;
+            transition-property: scale;
+        }
+
+        .pressed .translate,
+        .pressed .scale {
+            transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .pressed .translate {
+            translate: 0 0px;
+        }
+        .pressed .scale {
+            scale: 1;
+        }
+        </style>
+        <symbol id="s" viewBox="-25.07461166381836 -26.236068725585938 50.14922332763672 47.984046936035156" >
+            <path fill="currentColor" d="M 9.797174393178826e-16 16C -17.63355756877419 24.270509831248425 -17.63355756877419 24.270509831248425 -15.216904260722456 4.94427190999916C -28.531695488854606 -9.270509831248432 -28.531695488854606 -9.270509831248432 -9.404564036679572 -12.944271909999157C -5.510910596163089e-15 -30 -5.510910596163089e-15 -30 9.404564036679567 -12.944271909999161C 28.531695488854606 -9.27050983124843 28.531695488854606 -9.27050983124843 15.216904260722458 4.944271909999155C 17.633557568774222 24.270509831248404 17.633557568774222 24.270509831248404 9.797174393178826e-16 16" />
+        </symbol>
+        <use id="u" href="#s" x="-5" y="-5" width="10" height="10" />
+        <filter id="f">
+            <feTurbulence type="fractalNoise" baseFrequency="1" />
+            <feColorMatrix values="1 0 0 5.5 -1 0 0.5 0 5.5 -1 0 0 0.5 5.5 -1 0 0 0 0 1" />
+            <feBlend in2="SourceGraphic" mode="darken" />
+            <feComposite in2="SourceGraphic" operator="in" />
+        </filter>
+    </defs>
+    <circle filter="url(#f)" fill="hsl(43 53% 89%)" r="45" />
+    <g class="active">
+        <g class="hover">
+            <g transform="translate(-25 -5) rotate(20)">
+                <path stroke="hsl(41 9% 35%)" stroke-width="1" d="M 0 -5 v 30" />
+                <use style="color: hsl(43 93% 64%)" href="#u" y="-5" />
+            </g>
+        </g>
+    </g>
+    <ellipse fill="hsl(41 9% 35%)" rx="20" ry="10" />
+    <ellipse fill="hsl(40 13% 23%)" rx="14" ry="7" />
+    <g class="translate">
+        <g class="scale">
+            <use style="color: hsl(105 92% 67%)" transform=" translate(7 -2) rotate(10) scale(0.8)" href="#u" />
+            <use style="color: hsl(323 78% 77%)" transform=" translate(-5 -9) rotate(-10) scale(0.9)" href="#u" />
+            <use style="color: hsl(15 95% 65%)" transform="translate(-14 -20) rotate(-15) scale(1.1)" href="#u" />
+            <use style="color: hsl(194 90% 72%)" transform="translate(15 -16) rotate(30) scale(1)" href="#u" />
+            <use style="color: hsl(260 90% 72%)" transform="translate(1 -25) rotate(5) scale(1.2)" href="#u" />
+        </g>
+    </g>
+    <path fill="hsl(37 11% 28%)" d="M -14 0 C -14 10 -14 16 -15 26 C -8 32 8 32 15 26 C 14 16 14 10 14 0 A 14 7 0 0 1 -14 0" />
+    <path fill="hsl(41 9% 35%)" d="M -20 0 -14 0 A 14 7 0 0 0 14 0 L 20 0 A 20 11 0 0 1 -20 0" />
+</svg>
