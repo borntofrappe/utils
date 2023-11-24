@@ -8,7 +8,7 @@ An SVG document you can embed as an external resource.
 
   ```html
   <object
-    data="document.svg"
+    data="top-hat.svg"
     type="image/svg+xml"
     width="280"
     height="280"
@@ -22,5 +22,5 @@ An SVG document you can embed as an external resource.
   Point to the resource in the `src` attribute.
 
   ```html
-  <embed src="document.svg" type="image/svg+xml" width="280" height="280"></embed>
+  <embed src="top-hat.svg" type="image/svg+xml" width="280" height="280"></embed>
   ```
