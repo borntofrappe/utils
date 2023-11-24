@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>svg-object</title>
+    <style>
+      body {
+        font-family: system-ui;
+      }
+
+      h2 {
+        font-weight: 400;
+      }
+
+      code {
+        font-size: 1rem;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>svg-object</h1>
+    <p>
+      There are at least two elements to include a full-blown
+      <code>&lt;svg&gt;</code> as an external resource.
+    </p>
+    <article>
+      <h2><code>object</code></h2>
+      <object
+        title="A magical top hat"
+        data="top-hat.svg"
+        type="image/svg+xml"
+        width="300"
+        height="300"
+      ></object>
+    </article>
+
+    <article>
+      <h2><code>embed</code></h2>
+      <embed
+        alt="A magical top hat"
+        src="top-hat.svg"
+        type="image/svg+xml"
+        width="300"
+        height="300"
+      />
+    </article>
+  </body>
 </html>
