@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>svg-object</title>
+    <title>svg-objects</title>
     <style>
       body {
         font-family: system-ui;
@@ -19,32 +19,34 @@
     </style>
   </head>
   <body>
-    <h1>svg-object</h1>
-    <p>
-      There are at least two elements to include a full-blown
-      <code>&lt;svg&gt;</code> as an external resource.
-    </p>
-    <article>
-      <h2><code>object</code></h2>
-      <object
-        title="A magical top hat"
-        data="top-hat.svg"
-        type="image/svg+xml"
-        width="300"
-        height="300"
-      ></object>
-    </article>
+    <h1>svg-objects</h1>
 
-    <article>
-      <h2><code>embed</code></h2>
-      <embed
-        alt="A magical top hat"
-        src="top-hat.svg"
-        type="image/svg+xml"
-        width="300"
-        height="300"
-      />
-    </article>
+    <h2>elements</h2>
+    <p>There are at least two elements to embed an SVG document:</p>
+
+    <ul>
+      <li>
+        <p>with the <code>&lt;object&gt;</code> element</p>
+        <object
+          title="A magical top hat"
+          data="top-hat.svg"
+          type="image/svg+xml"
+          width="300"
+          height="300"
+        ></object>
+      </li>
+
+      <li>
+        <p>with the <code>&lt;embed&gt;</code> element</p>
+        <embed
+          alt="A magical top hat"
+          src="top-hat.svg"
+          type="image/svg+xml"
+          width="300"
+          height="300"
+        />
+      </li>
+    </ul>
 
     <h2>interactive views</h2>
     <p>
