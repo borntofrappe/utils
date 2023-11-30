@@ -1,8 +1,14 @@
-# svg-object
+# svg-objects
 
-An SVG document you can embed as an external resource.
+A playground to consider vector graphics included as an object from an external source.
 
-- object
+---
+
+Run `npm run dev` to view the page on `http://localhost:5173/`. The instruction is ultimately unnecessary — you can very well test the page opening `index.html` yourself —, but you might enjoy the live environment.
+
+---
+
+- with an `<object>` element
 
   Point to the resource in the `data` attribute.
 
@@ -18,7 +24,7 @@ An SVG document you can embed as an external resource.
 
   In between the opening and closing bracket you can add a fallback resource.
 
-- embed
+- with an `<embed>` element
 
   Point to the resource in the `src` attribute.
 
