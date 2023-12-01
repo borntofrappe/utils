@@ -1,12 +1,6 @@
-# svg-images
+# SVG images
 
-A playground to consider vector graphics included in the `<img>` tag from an external source.
-
----
-
-Run `npm run dev` to view the page on `http://localhost:5173/`. The instruction is ultimately unnecessary — you can very well test the page opening `index.html` yourself —, but you might enjoy the live environment.
-
----
+It is possible to include `.svg` files with the `<img>` element.
 
 - show the entire graphic
 
@@ -14,13 +8,13 @@ Run `npm run dev` to view the page on `http://localhost:5173/`. The instruction 
   <img src="./icons.svg" alt="" width="600" height="100" />
   ```
 
-- show a portion of the graphic defined through a `<view>` element
+- show a portion of the graphic defined with a `<view>` element
 
   ```html
   <img src="./icons.svg#pie-chart" alt="" width="100" height="100" />
   ```
 
-  The view itself is predisposed in the `.svg` document
+  The view itself is predisposed in the document.
 
   ```html
   <view id="pie-chart" viewBox="400 0 100 100" />
@@ -37,9 +31,9 @@ Run `npm run dev` to view the page on `http://localhost:5173/`. The instruction 
   />
   ```
 
-  The values update the `viewBox` for the specific SVG
+  The values update the `viewBox` for the specific SVG.
 
-As you are able to selectively focus on parts of the graphic, it is possible to combine the feature with the `<picture>` element and show different images for different conditions, for instance the size of the viewport.
+As you are able to selectively focus on parts of the graphic, it is possible to combine the feature with the `<picture>` element and show different images with a media query.
 
 ```html
 <picture>
