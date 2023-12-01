@@ -41,7 +41,3 @@ Embedded documents can be fully interactive with a script, but also anchor link 
 <!-- ... -->
 <a href="#v-0-0-0"><text y="1.8">Henry III</text></a>
 ```
-
----
-
-Run `npm run dev` to view the page on `http://localhost:5173/`. The instruction is ultimately unnecessary — you can very well test the page opening `index.html` yourself —, but you might enjoy the live environment.
