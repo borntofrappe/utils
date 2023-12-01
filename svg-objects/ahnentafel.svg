@@ -1,16 +1,7 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 501 111">
     <title>Henry III Ahnentafel</title>
-    <description>Explore the ancestry of Henry III one generation at a time. Enter the "Escape" key to zoom out.</description>
-    <script>
-    function handleKeydown(e) {
-        if (e.key === "Escape") {
-        e.preventDefault();
-        location.href = "";
-        }
-    }
-    document.querySelector("svg").addEventListener("keydown", handleKeydown);
-    </script>
+    <description>Explore the ancestry of Henry III one generation at a time.</description>
     <defs>
         <rect id="c" fill="none" stroke="currentColor" x="-25" y="-10" width="50" height="20" rx="10" />
         <circle id="b" r="1.5" />
