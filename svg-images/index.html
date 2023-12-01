@@ -3,85 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>svg-images</title>
+    <title>SVG images</title>
   </head>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-    }
-
-    code[data-lang="HTML"]::before {
-      content: "<";
-    }
-
-    code[data-lang="HTML"]::after {
-      content: ">";
+      font-family: system-ui;
     }
   </style>
   <body>
-    <h1>svg-images</h1>
+    <h1>SVG images</h1>
 
-    <p>With an <code data-lang="HTML">img</code> tag</p>
-    <img
-      src="./icons.svg"
-      alt="SVG icons for a few data visualizations. Bar, line, candlestick and a handful of other types."
-      width="600"
-      height="100"
-    />
+    <ul>
+      <li>
+        <p>an entire graphic</p>
+        <img
+          src="./icons.svg"
+          alt="Icons a data visualizations"
+          width="600"
+          height="100"
+        />
+      </li>
 
-    <p>
-      With an <code data-lang="HTML">img</code> tag, focusing on a particular
-      icon through the <code data-lang="HTML">view</code> element
-    </p>
-    <img
-      src="./icons.svg#pie-chart"
-      alt="SVG icon for a debatable pie chart."
-      width="100"
-      height="100"
-    />
+      <li>
+        <p>a portion with a <code>&lt;view&gt;</code> element</p>
+        <img
+          src="./icons.svg#pie-chart"
+          alt="Icon for a pie chart"
+          width="100"
+          height="100"
+        />
+      </li>
 
-    <p>
-      With an <code data-lang="HTML">img</code> tag, focusing on a particular
-      icon with a <em>view fragment</em>
-    </p>
-    <img
-      src="./icons.svg#svgView(viewBox(0 0 100 100))"
-      alt="SVG icon for a data visualization, the first of a set."
-      width="100"
-      height="100"
-    />
+      <li>
+        <p>a portion with a <em>view</em> fragment</p>
+        <img
+          src="./icons.svg#svgView(viewBox(0 0 100 100))"
+          alt="SVG icon for a data visualization, the first of a set."
+          width="100"
+          height="100"
+        />
+      </li>
 
-    <p>
-      With an <code data-lang="HTML">picture</code> tag, highlighting different
-      views at different viewports
-    </p>
-    <picture>
-      <source
-        srcset="./picture.svg#window-corner"
-        alt="A couple of trees growing on the top of a hill and overlooking a calm lake."
-        media="(max-width: 500px)"
-        width="300"
-        height="300"
-      />
-      <source
-        srcset="./picture.svg#window"
-        alt="A soothing view of distant hills framing a lake under a mostly clear sky."
-        media="(max-width: 800px)"
-        width="500"
-        height="500"
-      />
-      <img
-        src="./picture.svg"
-        alt="A stylish room with a natural feel, a comforting couch, a couple of books waiting on a table, a plant growing on a shelf and a beautiful view of the outside."
-        width="800"
-        height="600"
-      />
-    </picture>
+      <li>
+        <p>different views with the <code>&lt;picture&gt;</code> element</p>
+        <picture>
+          <source
+            srcset="./picture.svg#window-corner"
+            alt="A couple of trees growing on the top of a hill and overlooking a calm lake."
+            media="(max-width: 500px)"
+            width="300"
+            height="300"
+          />
+          <source
+            srcset="./picture.svg#window"
+            alt="A soothing view of distant hills framing a lake under a mostly clear sky."
+            media="(max-width: 800px)"
+            width="500"
+            height="500"
+          />
+          <img
+            src="./picture.svg"
+            alt="A stylish room with a natural feel, a comforting couch, a couple of books waiting on a table, a plant growing on a shelf and a beautiful view of the outside."
+            width="800"
+            height="600"
+          />
+        </picture>
+      </li>
+    </ul>
   </body>
 </html>
