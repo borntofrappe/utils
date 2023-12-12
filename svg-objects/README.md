@@ -1,12 +1,10 @@
 # SVG objects
 
-It is possible to include `.svg` files with the `<img>` element, as a static asset, but also other elements, as entire documents.
-
 ## Elements
 
-Refer to the graphic:
+It is possible to include `.svg` files with the `<img>` element, as a static asset, but also other elements, as entire documents.
 
-- with `<object>` element and the `data` attribute
+- `<object>`
 
   ```html
   <object
@@ -20,7 +18,7 @@ Refer to the graphic:
   </object>
   ```
 
-- with `<embed>` element and the `src` attribute
+- `<embed>`
 
   ```html
   <embed
