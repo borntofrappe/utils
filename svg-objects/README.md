@@ -39,3 +39,34 @@ Embedded documents can be fully interactive with a script, but also anchor link 
 <!-- ... -->
 <a href="#v-0-0-0"><text y="1.8">Henry III</text></a>
 ```
+
+## Stack
+
+It is possible to selectively show vector graphics with URL fragments and the concept of a stack, nested `<svg>` elements.
+
+```html
+<svg>
+  <svg id="filter-1"></svg>
+  <svg id="filter-2"></svg>
+</svg>
+```
+
+With CSS the `:target` pseudo selector.
+
+```css
+svg > svg:not(:target) {
+  display: none;
+}
+```
+
+Reference the file and match one the `id` attributes to see the vector.
+
+```html
+<object
+    title="First filter"
+    data="stack.svg#filter-1"
+    type="image/svg+xml"
+    width="300"
+    height="300">
+</obect>
+```
