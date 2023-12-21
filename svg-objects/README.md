@@ -30,6 +30,18 @@ It is possible to include `.svg` files with the `<img>` element, as a static ass
   />
   ```
 
+- `<iframe>`
+
+  ```html
+  <iframe
+    title="A magical top hat"
+    src="./svg/top-hat.svg"
+    allow="allow-scripts"
+    width="300"
+    height="300"
+  ></iframe>
+  ```
+
 ## Interactive views
 
 Embedded documents can be fully interactive with a script, but also anchor link elements `<a>`. Refer to the `id` attribute of different `<view>` elements to update the visible area and show different parts of the graphic.
