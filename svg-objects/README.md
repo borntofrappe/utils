@@ -9,7 +9,7 @@ It is possible to include `.svg` files with the `<img>` element, as a static ass
   ```html
   <object
     title="A magical top hat"
-    data="top-hat.svg"
+    data="./svg/top-hat.svg"
     type="image/svg+xml"
     width="300"
     height="300"
@@ -23,7 +23,7 @@ It is possible to include `.svg` files with the `<img>` element, as a static ass
   ```html
   <embed
     alt="A magical top hat"
-    src="top-hat.svg"
+    src="./svg/top-hat.svg"
     type="image/svg+xml"
     width="300"
     height="300"
@@ -63,8 +63,8 @@ Reference the file and match one the `id` attributes to see the vector.
 
 ```html
 <object
-    title="First filter"
-    data="stack.svg#filter-1"
+    title="Second filter"
+    data="./svg/filter-icons.svg#filter-2"
     type="image/svg+xml"
     width="300"
     height="300">
