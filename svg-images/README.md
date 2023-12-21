@@ -5,13 +5,13 @@ It is possible to include `.svg` files with the `<img>` element.
 - show the entire graphic
 
   ```html
-  <img src="./icons.svg" alt="" width="600" height="100" />
+  <img src="./svg/data-icons.svg" alt="" width="600" height="100" />
   ```
 
 - show a portion of the graphic defined with a `<view>` element
 
   ```html
-  <img src="./icons.svg#pie-chart" alt="" width="100" height="100" />
+  <img src="./svg/data-icons.svg#pie-chart" alt="" width="100" height="100" />
   ```
 
   The view itself is predisposed in the document.
@@ -24,7 +24,7 @@ It is possible to include `.svg` files with the `<img>` element.
 
   ```html
   <img
-    src="./icons.svg#svgView(viewBox(0 0 100 100))"
+    src="./svg/data-icons.svg#svgView(viewBox(0 0 100 100))"
     alt=""
     width="100"
     height="100"
@@ -38,12 +38,12 @@ As you are able to selectively focus on parts of the graphic, it is possible to 
 ```html
 <picture>
   <source
-    srcset="./picture.svg#zoom"
+    srcset="./svg/picture.svg#zoom"
     alt=""
     media="(max-width: 800px)"
     width="300"
     height="300"
   />
-  <img src="./picture.svg" alt="" width="800" height="600" />
+  <img src="./svg/picture.svg" alt="" width="800" height="600" />
 </picture>
 ```
