@@ -101,7 +101,7 @@
             <use style="color: hsl(15 95% 65%)" transform="translate(10 -28) rotate(20)" href="#u" />
             <g fill="hsl(37 11% 28%)" font-family="monospace" text-anchor="middle" font-weight="700">
                 <text transform="translate(-9 -13) rotate(-12)" font-size="5">&lt;svg&gt;</text>
-                <text transform="translate(8 -17) rotate(20)" font-size="6">&lt;object&gt;</text>
+                <text transform="translate(8 -17) rotate(20)" font-size="6">object</text>
             </g>
         </g>
     </g>
